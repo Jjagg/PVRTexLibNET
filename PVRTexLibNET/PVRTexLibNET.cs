@@ -95,7 +95,7 @@ namespace PVRTexLibNET
     public class PVRTexture : IDisposable
     {
         #region Interop
-        private const string dllName = "PVRTexLibWrapper.dll";
+        private const string dllName = "PVRTexLibWrapper";
 
         [DllImport(dllName, CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr CreateTexture(IntPtr data, uint u32Width, uint u32Height, uint u32Depth, PixelFormat ptFormat, bool preMultiplied, VariableType eChannelType, ColourSpace eColourspace);
